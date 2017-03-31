@@ -1,0 +1,64 @@
+/*****************************************************
+BASE FLEXBOX STYLING
+*****************************************************/
+
+.flex-gal {
+	/*mobile-first styling, single column until media queries kick in*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-align-content: space-between;
+	-moz-align-content: space-between;
+	align-content: space-between;
+}
+
+/*center column in, and fit to,the width of the gallery's container*/
+.item-cont {
+	margin: auto;
+	max-width: 90%;
+}
+
+/*fit image to item-cont and set fixed margin @ T&B and auto margin @ L&R
+	to facilitate proper scaling and grid reformatting*/
+.gal-item {
+	margin: 20px auto;
+	padding: 0px;
+	max-width: 100%;
+	max-height: 100%;
+	/* cosmetic styling nix or modify as desired */
+	border: 1px solid grey;
+  -webkit-box-shadow: 0 0 5px 10px #e0e0e0;
+  -moz-box-shadow: 0 0 5px 10px #e0e0e0;
+  box-shadow: 0 0 5px 10px #e0e0e0;
+}
+
+
+/*****************************************************
+MEDIA QUERY FLEXBOX STYLING
+*****************************************************/
+
+/*once screen is wide enough, change to wrapped flex row.
+	break point(s) should be changed to accomodate image size*/
+@media ( min-width: 910px ) {
+	.flex-gal {
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.item-cont {
+		max-width: 45%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+}
