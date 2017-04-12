@@ -3,26 +3,32 @@
 
 <head>
 	<title>Flexbox Photo Gallery</title>
-	<meta charset=utf-8">
+	<meta charset="utf-8">
+	<link href="normalize.css" rel="stylesheet" type="text/css">
 	<link href="flexgal.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<div class="flex-gal">
 
-			<!-- place each image element inside a div. div gets class "item-cont" and img gets class "gal-item"-->
+		<!-- place each image element inside a div. div gets class 'item-cont' and img gets class 'gal-item'-->
+		<!-- The jQuery overlay gets the image location from the image tag's src attribute
+				 and gets the caption text from the image tag's alt attribute. And, it will only
+				 get these attributes from img tags with 'gal-item' class Do with that what you will. -->
 
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/400/400/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/400/399/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/399/400/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/399/399/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/400/401/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/401/400/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/401/401/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/401/399/" alt=""></div>
-			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/399/401/" alt=""></div>
-		</ul>
-	</div> <!-- end "gallery" div -->
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/400/400/" alt="Chillwave intelligentsia butcher, tbh vinyl tofu"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/400/399" alt="Gochujang offal bicycle rights selfies vegan ramp"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/399/400" alt="Jean shorts affogato artisan subway tile tumblr"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/399/399" alt="Kitsch locavore yr, cardigan aesthetic woke"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/400/401" alt="Gluten-free la croix lumbersexual, blog fashion"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/401/400" alt="Air plant yr cray unicorn kinfolk listicle lo-fi"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/401/401" alt="Pickled post-ironic, sriracha activated charcoal"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/399/401" alt="Kombucha pork belly organic lo-fi, post-ironic"></div>
+			<div class="item-cont"><img class="gal-item" src="http://lorempixel.com/401/399" alt="Before they sold out keffir try-hard edison bulb"></div>
+	</div> <!-- end "flex-gal" div -->
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="overlay.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
