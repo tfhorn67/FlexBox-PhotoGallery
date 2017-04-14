@@ -21,17 +21,14 @@ BASE FLEXBOX STYLING
 	-moz-align-content: space-between;
 	align-content: space-between;
 	width: 100%;
-}
-
-.item-cont {
-	margin: 0;
-	max-width: 90%;
 	text-align: center;
 }
 
 .gal-item {
-	margin: 18px 10px;
+	margin: 20px auto;
 	padding: 0px;
+	max-width: 90%;
+	text-align: center;
 	/*use the max-width/height to control thumbnail size*/
 	max-width: 200px;
 	max-height: 200px;
@@ -56,10 +53,11 @@ MEDIA QUERY FLEXBOX STYLING
 		flex-wrap: wrap;
 	}
 
-	.item-cont {
+	.gal-item {
 		max-width: 45%;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 
 }
+
