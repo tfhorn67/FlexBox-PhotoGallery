@@ -1,4 +1,3 @@
 $ cat .gitattributes
-flexgal.css linguist-vendored
 normalize.css linguist-vendored
 flexgal.html linguist-vendored
