@@ -1,2 +1,4 @@
 $ cat .gitattributes
-*.rb linguist-language=CSS
+flexgal.css linguist-vendored
+normalize.css linguist-vendored
+flexgal.html linguist-vendored
